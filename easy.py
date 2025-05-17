@@ -1,6 +1,8 @@
 from telethon import TelegramClient, events
 import re
 import asyncio
+from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
 
 api_id = 29459757
 api_hash = '7cc969764c4de8a52169570ac20000a8'
