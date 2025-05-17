@@ -9,7 +9,7 @@ api_hash = '7cc969764c4de8a52169570ac20000a8'
 session_string = "1ApWapzMBu4Sbmc7c5s44pLQ22UEse-Uyc0U0xWkxcOshYoED_Fb71Sq54idI6hqSNWQVG_gCDQhnUQVAFd_fQMcbRbNWvmoqDM4uS02q-RTcvwQT3mDOGcabfPwYaPV8oXtHfNTOHHY8vukH6NP7gSUBA4itvhpGn74nC1SfngevCA_LfGpeoOtN_jZDMG_zlWtlpAHxlJl6w5zS7qIR6kwSvD-HfKBCKlHOAdgMndoFEda47mrj35Glz1v7OVgFcv2RhxKPWCOkcynMIwLDpDyCjj1k_1zr_LtAuaDgrLKJVz0h5Khj7122_7b0H2kypMDzGOp5fqATdKt5KeS3PzkawZENeH0="
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
-client = TelegramClient(session_file, api_id, api_hash)
+client = TelegramClient(session_string, api_id, api_hash)
 
 @client.on(events.NewMessage(from_users='Telegram'))
 async def handler(event):
